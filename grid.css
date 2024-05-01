@@ -1,0 +1,41 @@
+.container {
+    width: 1400px;
+    height: 1000px;
+    background-color: brown;
+    border: 1px solid black;
+    display: grid;
+    grid-template: "header header header"
+    "sidebar content-1 content-1"
+    "sidebar content-2 content-3"
+    "footer footer footer"
+}
+
+.box {
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#content-1 {
+    grid-area: content-1;
+}
+
+#content-2 {
+    grid-area: content-2;
+}
+
+#content-3 {
+    grid-area: content-3;
+}
+
+#footer {
+    grid-area: footer;
+}

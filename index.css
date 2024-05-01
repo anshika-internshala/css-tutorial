@@ -1,0 +1,14 @@
+p {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: green underline dashed ;  
+}
+
+#one {
+    font-family:'Courier New', Courier, monospace;
+}

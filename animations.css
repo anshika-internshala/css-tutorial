@@ -1,0 +1,48 @@
+.container {
+    width: 1400px;
+    height: 700px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 10px;
+    position: relative;
+    border-radius: 100px;
+    top: 0px;
+    left: 0px;
+    /* animation-name: bottomMovement;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+    animation: bottomMovement 5s linear 2s 1 alternate forwards;
+
+}
+
+@keyframes bottomMovement {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 1100px;
+        background-color: beige;
+    }
+    50% {
+        top: 450px;
+        left: 1100px;
+        background-color: lightgreen;
+    }
+    100% {
+        top: 450px;
+        left: 0px;
+        background-color: lightcoral;
+    }
+}

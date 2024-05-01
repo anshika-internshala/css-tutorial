@@ -1,0 +1,38 @@
+.container {
+    width: 100vw;
+    height: 3000px;
+    background-color: brown;
+    border: 1px solid black;
+}
+
+.container1 {
+    width: 100vw;
+    height: 3000px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.box1 {
+    position: relative;
+    left: 300px;
+    top: 0px;
+}
+
+.box2{
+    position: sticky;
+    top: 0px;
+}
+
+.box3 {
+    position: fixed;
+    top: 400px;
+}
+
+/** static , relative , absolute , sticky, fixed */

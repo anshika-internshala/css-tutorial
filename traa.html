@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Tasks</title>
+    <style>
+        /* Task 1: Navigation Bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Task 2: Image Gallery */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+            transition: opacity 0.3s, border 0.3s;
+        }
+
+        .image:hover {
+            opacity: 0.8;
+            border: 2px solid #333;
+        }
+
+        /* Task 3: Feature Section */
+        .feature-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: background-color 0.3s, border 0.3s;
+        }
+
+        .feature-box:hover {
+            background-color: #555;
+            border: 2px solid #fff;
+        }
+
+        .feature-box img {
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Task 4: Stylish Form */
+        form {
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #555;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .loading-spinner {
+            display: none;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1: Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Task 2: Image Gallery -->
+    <div class="image-gallery">
+        <div class="image"><img src="image1.jpg" alt="Image 1"></div>
+        <div class="image"><img src="image2.jpg" alt="Image 2"></div>
+        <div class="image"><img src="image3.jpg" alt="Image 3"></div>
+    </div>
+
+    <!-- Task 3: Feature Section -->
+    <div class="feature-section">
+        <div class="feature-box"><img src="icon1.png" alt="Icon 1"><p>Feature 1</p></div>
+        <div class="feature-box"><img src="icon2.png" alt="Icon 2"><p>Feature 2</p></div>
+        <div class="feature-box"><img src="icon3.png" alt="Icon 3"><p>Feature 3</p></div>
+    </div>
+
+    <!-- Task 4: Stylish Form -->
+    <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button><span class="loading-spinner"></span>Login</button>
+    </form>
+
+    <script>
+        // JavaScript (for loading spinner simulation)
+        const button = document.querySelector('button');
+        const loadingSpinner = document.querySelector('.loading-spinner');
+
+        button.addEventListener('click', function () {
+            // Simulate loading by displaying a loading spinner for 2 seconds
+            loadingSpinner.style.display = 'inline-block';
+            setTimeout(function () {
+                loadingSpinner.style.display = 'none';
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>

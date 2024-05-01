@@ -1,0 +1,68 @@
+.container {
+    width: 1400px;
+    height: 1000px;
+    background-color: brown;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    height: 250px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 4s linear 1s;
+}
+
+#rotateX:hover {
+    transform: rotateX(180deg);
+}
+
+#rotateY:hover {
+    transform: rotateY(180deg);
+}
+
+#rotateZ:hover {
+    transform: rotateZ(180deg);
+}
+
+#rotate3D:hover {
+    transform: rotate3d(1 , 1 , 1 , 360deg);
+}
+
+#translateX:hover {
+    transform: translateX(-200px);
+}
+
+#translateY:hover {
+    transform: translateY(-200px);
+}
+
+#translateZ:hover {
+    transform: perspective(400px) translateZ(200px);
+}
+
+#translate3D:hover {
+    transform: translate3d(-200px, -200px, 200px);
+}
+
+#scaleX:hover {
+    transform: scaleX(0.5);
+}
+
+#scaleY:hover {
+    transform: scaleY(2);
+}
+
+#scaleZ:hover {
+    transform: perspective(300px) scaleZ(5) rotateX(45deg);
+}
+
+#scale3D:hover {
+    transform: scale3d(2, 0.5, 1);
+}
